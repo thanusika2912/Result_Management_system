@@ -1,0 +1,25 @@
+.container-1 {
+    padding: 2% 3%;
+
+}
+
+.row-new {
+    width: 40%;
+    padding-bottom: 0.75%;
+    color: #e2dfdf;
+}
+
+.actions {
+    padding-top: 1%;
+    color: #e2dfdf;
+}
+
+.btn {
+    margin-right: 2%;
+    margin-bottom: 5%;
+    color: #e2dfdf;
+}
+
+.error {
+    color: red;
+}

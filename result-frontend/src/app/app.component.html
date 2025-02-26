@@ -1,0 +1,10 @@
+<div class="container-1">
+  <app-header><style> h3{ font-family: 'Times New Roman', Times, serif;}</style></app-header>
+  <div class="hero-1" *ngIf="outlet.isActivated === false">
+    <h3 class="heading"><style> h3{ font-family: 'Times New Roman', Times, serif;}</style>Login As</h3>
+    <button routerLink="teacher" class="btn btn-primary btn-teacher">Teacher</button>
+    <button routerLink="student" class="btn btn-primary btn-student">Student</button>
+  </div>
+  <router-outlet #outlet="outlet"></router-outlet>
+  <app-footer class="footer"></app-footer>
+</div>

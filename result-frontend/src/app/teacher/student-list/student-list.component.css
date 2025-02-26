@@ -1,0 +1,69 @@
+.table {
+    margin-top: 2%;
+}
+
+/* .arrow {
+    border: solid #000;
+    border-width: 0 3px;
+    display: inline-block;
+    padding: 3px;
+} */
+
+/* .up {
+    transform: rotate(-135deg);
+} */
+
+.th {
+    cursor: pointer;
+    position: relative;
+}
+
+.arrow-up,
+.arrow-down {
+    position: absolute;
+    right: 10%;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    background: transparent;
+}
+
+.arrow-up {
+    top: 30%;
+    border-bottom: solid 7px #e6e1e1;
+    border-top-width: 0;
+}
+
+.arrow-down {
+    top: 50%;
+    border-top: solid 7px #ccc;
+    border-bottom-width: 0;
+}
+
+.btn-1 {
+    margin-left: 12%;
+}
+
+.edit-a {
+    cursor: pointer;
+}
+
+.edit {
+    width: 15px;
+    height: 15px;
+}
+
+.delete-a {
+    cursor: pointer;
+}
+
+.delete {
+    width: 15px;
+    height: 15px;
+}
+
+.p-f {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1%;
+}

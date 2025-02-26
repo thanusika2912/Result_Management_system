@@ -1,0 +1,32 @@
+.container-1 {
+    min-height: 100%;
+    position: relative;
+    background-image: url('../../public/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: auto;
+    height: 100vh;
+}
+
+.hero-1 {
+    padding: 8% 2%;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3%;
+    color: #a7cbe9;
+}
+
+.btn {
+    margin: 1% 2%;
+    padding: 1.5% 3%;
+    color: #ebe3e3;   
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

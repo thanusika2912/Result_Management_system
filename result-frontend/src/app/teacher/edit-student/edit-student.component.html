@@ -1,0 +1,111 @@
+<div class="container">
+    <h3 class="heading">Edit Student</h3>
+    <form [formGroup]="editStudentForm" class="row g-3">
+        <div class="col-md-12">
+            <label class="label" for="roll_no">Roll No</label>
+            <input type="text" name="roll_no" class="form-control" formControlName="roll_no" readonly>
+        </div>
+        <div class="col-md-12">
+            <label class="label" for="name">Name</label>
+            <input type="text" name="name" class="form-control" formControlName="name">
+            <div *ngIf="name?.invalid && (name?.dirty || name?.touched)" class="error">
+                <div *ngIf="name?.errors?.['required']">Name is required</div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <label class="label" for="dob">Date of Birth</label>
+            <input type="date" name="dob" class="form-control" formControlName="dob">
+            <div *ngIf="dob?.invalid && (dob?.dirty || dob?.touched)" class="error">
+                <div *ngIf="dob?.errors?.['required']">Date of Birth is required</div>
+                <div *ngIf="dob?.errors?.['invalidDob']">Invalid Date of Birth</div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <label for="mark1" class="label">Mark1</label>
+            <input type="number" name="mark1" class="form-control" formControlName="mark1">
+            <div *ngIf="mark1?.invalid && (mark1?.dirty || mark1?.touched)" class="error">
+                <div *ngIf="mark1?.errors?.['required']">
+                    mark1 is required.
+                </div>
+                <div *ngIf="mark1?.errors?.['min']">
+                    mark1 must be grater than or equal to 0.
+                </div>
+                <div *ngIf="mark1?.errors?.['max']">
+                    mark1 must be less than or equal to 100.
+                </div>
+            </div>
+        </div>
+       
+        <div class="col-md-12">
+            <label for="mark2" class="label">Mark2</label>
+            <input type="number" name="mark2" class="form-control" formControlName="mark2">
+            <div *ngIf="mark2?.invalid && (mark2?.dirty || mark2?.touched)" class="error">
+                <div *ngIf="mark2?.errors?.['required']">
+                    mark2 is required.
+                </div>
+                <div *ngIf="mark2?.errors?.['min']">
+                    mark2 must be grater than or equal to 0.
+                </div>
+                <div *ngIf="mark2?.errors?.['max']">
+                    mark2 must be less than or equal to 100.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <label for="mark3" class="label">Mark3</label>
+            <input type="number" name="mark3" class="form-control" formControlName="mark3">
+            <div *ngIf="mark3?.invalid && (mark3?.dirty || mark3?.touched)" class="error">
+                <div *ngIf="mark3?.errors?.['required']">
+                    mark3 is required.
+                </div>
+                <div *ngIf="mark3?.errors?.['min']">
+                    mark3 must be grater than or equal to 0.
+                </div>
+                <div *ngIf="mark3?.errors?.['max']">
+                    mark3 must be less than or equal to 100.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <label for="mark4" class="label">Mark4</label>
+            <input type="number" name="mark4" class="form-control" formControlName="mark4">
+            <div *ngIf="mark4?.invalid && (mark4?.dirty || mark4?.touched)" class="error">
+                <div *ngIf="mark4?.errors?.['required']">
+                    mark4 is required.
+                </div>
+                <div *ngIf="mark4?.errors?.['min']">
+                    mark4 must be grater than or equal to 0.
+                </div>
+                <div *ngIf="mark4?.errors?.['max']">
+                    mark4 must be less than or equal to 100.
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <label for="mark5" class="label">Mark5</label>
+            <input type="number" name="mark5" class="form-control" formControlName="mark5">
+            <div *ngIf="mark5?.invalid && (mark5?.dirty || mark5?.touched)" class="error">
+                <div *ngIf="mark5?.errors?.['required']">
+                    mark5 is required.
+                </div>
+                <div *ngIf="mark5?.errors?.['min']">
+                    mark5 must be grater than or equal to 0.
+                </div>
+                <div *ngIf="mark5?.errors?.['max']">
+                    mark5 must be less than or equal to 100.
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-12 actions">
+            <button type="submit" class="btn btn-primary" (click)="onSubmit()" [disabled]="editStudentForm.invalid">Submit</button>
+            <button type="reset" class="btn btn-danger">Reset</button>
+            <button class="btn btn-danger" (click)="gotoBack()">Back</button>
+        </div>
+    </form>
+</div>

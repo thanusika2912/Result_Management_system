@@ -1,0 +1,28 @@
+.container {
+    margin: 3% 0;
+}
+
+.heading {
+    text-align: center;
+    color: rgb(61, 74, 87);
+}
+
+.row {
+    padding: 3% 30%;
+    color: rgb(0, 0, 0);
+}
+
+.actions {
+    padding: 2.5% 1.5%;
+    color: rgb(22, 20, 20);
+}
+
+.btn {
+    margin-right: 2.5%;
+    padding: 1.5% 4%;
+   
+}
+
+.error {
+    color: red;
+}
